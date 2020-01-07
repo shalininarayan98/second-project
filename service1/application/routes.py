@@ -6,7 +6,7 @@ import requests
 
 @app.route('/', methods=['GET', 'POST'])
 def random_number():
-    random_number=randint(1,10)
+    random_number=randint(1,3)
 
     return random_number
 
