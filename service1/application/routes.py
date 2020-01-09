@@ -1,16 +1,17 @@
-import numpy as np
 from random import randint
 from application import app
 from flask import render_template
 import requests
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['POST'])
 def random_number():
-    random_number=randint(1,3)
+    number=randint(1,3)
 
-    return random_number
+    return number
 
-response=requests.get("http://localhost:5000")
-print(response.text)
 
-requests.post("http://localhost:5000", json={random_number}
+if __name__ == '__main__':
+    app.run (host='0.0.0.0', port=5001)
+
+
+
