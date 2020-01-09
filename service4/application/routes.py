@@ -6,12 +6,14 @@ import requests
 
 @app.route('/', methods=['GET','POST'])
 def service4():
-
     prediction=""
 
-    response=requests.post("http://service3:5003/service3")
+    response=requests.post("http://service3:5003")
+    app.logger.info("***************************************")
+    app.logger.info(response)
+
     prediction = response.json()['p']
 
-    return response.text
+    return prediction
 
 #    return render_template('home.html', title= 'prediction', response=request.txt, prediction=prediction)

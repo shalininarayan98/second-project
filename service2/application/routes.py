@@ -1,6 +1,7 @@
 import random
 import string
 import requests
+from application import app
 
 @app.route('/', methods=['GET', 'POST'])
 
