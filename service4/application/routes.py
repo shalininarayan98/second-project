@@ -4,8 +4,14 @@ from application.models import *
 from application import app, db
 
 
-@app.route('/service4', methods=['Get','Post'])
+@app.route('/', methods=['GET','POST'])
 def service4():
-    response=requests.get("http://service1:5000")
-    response1=requests.get("http://service2:5001")
-    return render_template('.html', title= 'Response', response=request.txt, response1=requests.txt)
+
+    prediction=""
+
+    response=requests.post("http://service3:5003/service3")
+    prediction = response.json()['p']
+
+    return response.text
+
+#    return render_template('home.html', title= 'prediction', response=request.txt, prediction=prediction)

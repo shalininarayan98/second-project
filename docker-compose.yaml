@@ -1,5 +1,5 @@
 
-version: '3.7'
+version: '3.3'
 services:
   nginx:
     image: nginx:latest
@@ -16,7 +16,7 @@ services:
   app:
     image: flask:latest
     build:
-      context: .
+      context: ./service4
     ports:
       - target: 5000
         published: 5000
@@ -28,16 +28,19 @@ services:
       - MY_SQL_DB=${MY_SQL_DB}
       - SECRET_KEY=${SECRET_KEY}
       - MY_SQL_DB_TEST=${MY_SQL_DB_TEST}
-    service1:
-      build: 
+        
+
+  service1:
+    build: 
       context: ./service1
       dockerfile: Dockerfile
-    service2:
-      build:
+
+  service2:
+    build:
       context: ./service2
       dockerfile: Dockerfile
-    service3: 
-      build:
+   
+  service3: 
+    build:
       context: ./service3
       dockerfile: Dockerfile
-
