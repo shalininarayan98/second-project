@@ -1,3 +1,4 @@
+
 version: '3.7'
 services:
   nginx:
@@ -6,12 +7,12 @@ services:
       - target: 80
         published: 80
         protocol: tcp
-        depends_on:
-        - app
-          volumes:
-        - type: bind
-          source: ./nginx.conf
-          target: /etc/nginx/nginx.conf
+    depends_on:
+      - app
+    volumes:
+      - type: bind
+        source: ./nginx.conf
+        target: /etc/nginx/nginx.conf
   app:
     image: flask:latest
     build:
@@ -39,5 +40,4 @@ services:
       build:
       context: ./service3
       dockerfile: Dockerfile
-
 

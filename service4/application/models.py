@@ -1,10 +1,8 @@
+from application import db
 
-
-
-
-class Predictions(db.Model)
+class Predictions(db.Model):
     predictionID = db.Column(db.Integer, primary_key=True, autoincrement = True)
-    preiction = db.Column(db.String(200), nullable = False)
+    prediction = db.Column(db.String(200), nullable = False)
 
 
     def __repr__(self):
@@ -12,3 +10,5 @@ class Predictions(db.Model)
             'ID: ', str(self.id),'\r\n',
             'prediction ', self.theme
         ])
+
+
