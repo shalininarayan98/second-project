@@ -19,6 +19,7 @@ services:
         context: .
       ports:
         - target: 5000
+          published: 5000
           protocol: tcp
       environment:
         - MY_SQL_USER=${MY_SQL_USER}
@@ -27,3 +28,17 @@ services:
         - MY_SQL_DB=${MY_SQL_DB}
         - SECRET_KEY=${SECRET_KEY}
         - MY_SQL_DB_TEST=${MY_SQL_DB_TEST}
+      service1:
+        build: 
+        context: ./service1
+        dockerfile: Dockerfile
+      service2:
+        build:
+        context: ./service2
+        dockerfile: Dockerfile
+      service3: 
+        build:
+        context: ./service3
+        dockerfile: Dockerfile
+
+
