@@ -7,8 +7,8 @@ import requests
 
 
 def prediction():
-    number = requests.post('http://service1:5001').text
-    letter = requests.post('http://service2:5002').text
+    random_number = requests.post('http://service1:5001').text
+    random_letter = requests.post('http://service2:5002').text
 
 
     if random_letter=='A' and random_number=='1':
@@ -27,5 +27,5 @@ def prediction():
         return {"p":'2020 will be a fantasic year for you finacially'}
     elif random_letter=='C' and random_number=='2':
         return {"p":'Your health will take a hit this year, take precautions in your lifestyle choices'}
-    elif random_letter=='C' and random_number=='3':
+    else:
         return {"p":'Your loyalities towards people will need to be reassessed this year, do not be naive'}
