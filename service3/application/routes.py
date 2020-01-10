@@ -4,12 +4,24 @@ from application import app
 import requests
 
 @app.route('/', methods=['GET', 'POST'])
-
-
 def prediction():
-    random_number = requests.post('http://service1:5001').text
-    random_letter = requests.post('http://service2:5002').text
+    
+    random_number=requests.get('http://service1:5001').text
+    requests.get('http://service2:5002').text
 
+
+    if random_number=='1':
+        return 'In a world full of fish you are going to be a shark'
+    elif random_number=='2':
+        return 'Wave farewell to bad habits and enjoy a healthier bank balance as a result'
+    elif random_number=='3':
+        return 'Expect significant progress in your love life'
+
+    #return requests.get('http://service1:5001').text
+
+
+'''
+def prediction():
 
     if random_letter=='A' and random_number=='1':
         return {"p":'In a world full of fish you are going to be a shark'}
@@ -27,5 +39,9 @@ def prediction():
         return {"p":'2020 will be a fantasic year for you finacially'}
     elif random_letter=='C' and random_number=='2':
         return {"p":'Your health will take a hit this year, take precautions in your lifestyle choices'}
-    else:
+    elif random_letter=='C' and random_number=='3':
         return {"p":'Your loyalities towards people will need to be reassessed this year, do not be naive'}
+
+    return requests.get('http://service1:5001').json()
+    return requests.get('http://service2:5002').json()
+'''
