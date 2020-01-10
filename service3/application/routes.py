@@ -32,15 +32,4 @@ def post():
     if prediction.ok:
         return requests.get('http://service1:5001').text and requests.get('http://service2:5002').text
     else:
-        return 'e'
-
-'''
-    if random_number=='1':
-        return 'In a world full of fish you are going to be a shark'
-    elif random_number=='2':
-        return 'Wave farewell to bad habits and enjoy a healthier bank balance as a result'
-    elif random_number=='3':
-        return 'Expect significant progress in your love life'
-
-    #return requests.get('http://service1:5001').text
-'''
+        return 'error'

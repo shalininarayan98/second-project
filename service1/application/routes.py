@@ -9,9 +9,3 @@ def random_number():
     number=randint(1,3)
 
     return str(number)
-'''
-requests.post("http://localhost:5000", json={random_number})
-
-if __name__ == '__main__':
-    app.run (host='0.0.0.0', port=5001)
-'''
