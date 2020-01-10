@@ -4,20 +4,59 @@ from application.models import *
 from application import app, db
 import requests
 
+
+
+
+@app.route('/', methods=['GET','POST'])
+def service4():
+
+    random_number=requests.get('http://service1:5001').text
+    random_letter=requests.get('http://service2:5002').text
+    response=requests.post('http://service3:5003').text
+
+    ## response=prediction.post('http://service3:5003').text
+    
+    ## return render_template('home.html', random_number=random_number, random_letter=random_letter, prediction=response)
+    return response
+
+
+'''
+
+
+@app.route('/', methods=['GET','POST'])
+def service4():
+#    prediction=requests.post("http://service3:5003")
+    prediction=""
+
+#    if prediction.ok:
+#        random_number=requests.get('http://service1:5001').text
+#        random_letter=requests.get('http://service2:5002').text
+        response=prediction.post('http://service3:5003').text
+    
+        return render_template('home.html', random_number=random_number, random_letter=random_letter, prediction=requests)
+
+    else:
+
+        return 'error' 
+
+
+
+
 @app.route('/', methods=['GET','POST'])
 def service4():
     prediction=requests.post("http://service3:5003")
 
-    if prediction.ok:
-        random_number=requests.get('http://service1:5001').text
-        random_letter=requests.get('http://service2:5002').text
-        prediction=prediction.get('http://service3:5003').text
-    
+    random_number=requests.post('http://service1:5001').text
+    random_letter=requests.post('http://service2:5002').text
+    prediction=prediction.get('http://service3:5003').text
+    if prediction.status_code==200:
+        prediction=prediction.text
+
+        
     return render_template('home.html', random_number=random_number, random_letter=random_letter, prediction=prediction)
 
 
 
-'''
 
 @app.route('/', methods=['GET','POST'])
 def service4():
