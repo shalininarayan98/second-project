@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body_content %}
+        <h1>Home Page</h1>
+        <p>How is your 2020 going to be? Find out here!</p>
+        {% for post in posts %}
+                <div>
+			<p> {{ random_number }} this is your random number </p>
+			<p> {{ random_letter }} this is your random letter </p>
+			<p> {{ prediction }} this is your prediction for 2020! </p>
+                </div>
+        {% endfor %}
+{% endblock body_content %}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>{{ title }} - Random Generator</title>
+                <div class="title">
+                        <h1>Number Generator</h1>
+                </div>
+                <div class="navbar">
+                        <h2><b>Navigation:</b>
+                                    <a href="{{ url_for('home') }}">Home</a>
+                        </h2>
+
+                </div>
+        </head>
+        <body>
+                {% block body_content %}
+                {% endblock %}
+        </body>
+</html>
+
