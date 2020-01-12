@@ -18,7 +18,7 @@ services:
       - service2
       - service3
   app:
-    image: jenkins-deployment-project2:5000/service4:build-${BUILD_NUMBER}
+    image: ansible-jenkins:5000/service4:build-${BUILD_NUMBER}
     build:
       context: ./service4
     ports:
@@ -35,19 +35,19 @@ services:
         
 
   service1:
-    image: jenkins-deployment-project2:5000/service1:build-${BUILD_NUMBER}
+    image: ansible-jenkins:5000/service1:build-${BUILD_NUMBER}
     build: 
       context: ./service1
       dockerfile: Dockerfile
 
   service2:
-    image: jenkins-deployment-project2:5000/service2:build-${BUILD_NUMBER}       
+    image: ansible-jenkins:5000/service2:build-${BUILD_NUMBER}       
     build:
       context: ./service2
       dockerfile: Dockerfile
    
   service3: 
-    image: jenkins-deployment-project2:5000/service3:build-${BUILD_NUMBER}
+    image: ansible-jenkins:5000/service3:build-${BUILD_NUMBER}
     build:
       context: ./service3
       dockerfile: Dockerfile
