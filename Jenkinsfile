@@ -4,10 +4,8 @@ pipeline{
         stages{
 		stage('--Build Docker--'){
 			steps{
-				#sh '''. ~/.bashrc
 				      docker-compose up -d --build
 				      docker ps -a
-				      #docker-compose push
 				      '''
 			}
 		}
