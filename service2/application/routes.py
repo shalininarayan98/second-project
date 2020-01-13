@@ -10,4 +10,5 @@ def random_letter():
     upper_alphabet = string.ascii_uppercase
     letter = random.choice(upper_alphabet[0:3])
     
-    return letter
+    return str(letter)
+    print(letter)
