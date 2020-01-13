@@ -12,7 +12,7 @@
 
 # The Brief
 
-- You are required to create a service-orientated aThe core service 
+- At its core you are creating an application that generates “Objects” upon a set of predefined rules.  These “Objects” can be from whatever domain you wish.
 – Service 1: this will render the Jinja2 templates you need to interact with your application, it will also be responsible for communicating with the other 3 services, and finally for persisting some data in an SQL database.rchitecture for your application, an application must be made composed of at least 4 services that work together.
 - Service 2 and 3: These will both generate a random “Object” of your choice
 - This service will also create an “Object” however this “Object” must be based upon the results of service #2 + #3 using some pre-defined rules.
@@ -28,8 +28,11 @@
 
      •	Cloud server: GCP virtual machines 
     
-     •	Containerisation: Docker 
-- With this project brief in mind, I am going to create a app that generators a prediction for the user's 2020. this will be done by generating a random letter, a random number and using these two combinations to generate a prediction. 
+     •	Containerisation: Docker python3
+from application import db
+from application.models import Posts
+db.create_all()
+- With this project brief in mind, I am going to create a app that generators a prediction for the user's 2020. This will be done by generating a random Nnumber (service 1), generating a random letter (service 2), and using these two combinations to generate a prediction (service 3), which is rendered on service 4.
 
 # Planning
 
