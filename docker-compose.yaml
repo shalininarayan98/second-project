@@ -1,4 +1,4 @@
-
+'''
 version: '3.3'
 services:
   nginx:
@@ -51,3 +51,54 @@ services:
     build:
       context: ./service3
       dockerfile: Dockerfile
+
+'''
+
+version: '3.3'
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+    depends_on:
+      - app
+    volumes:
+      - type: bind
+        source: ./nginx.conf
+        target: /etc/nginx/nginx.conf
+    depends_on:
+      - service1
+      - service2
+      - service3
+  app:
+    image: ansible-jenkins-new:5000/service4:build-${BUILD_NUMBER}
+    build:
+      context: ./service4
+    ports:
+      - target: 5000
+        published: 5000
+        protocol: tcp
+    environment:
+      - MY_SQL_USER=${MY_SQL_USER}
+      - MY_SQL_PASSWORD=${MY_SQL_PASSWORD}
+      - MY_SQL_URL=${MY_SQL_URL}
+      - MY_SQL_DB=${MY_SQL_DB}
+      - SECRET_KEY=${SECRET_KEY}
+      - MY_SQL_DB_TEST=${MY_SQL_DB_TEST}
+  service1:
+    build:
+      context: ./service1
+      dockerfile: Dockerfile
+      image: ansible-jenkins-new:5000/service1:build-${BUILD_NUMBER}
+  service2:
+    build:
+      context: ./service2
+      dockerfile: Dockerfile
+      image: ansible-jenkins-new:5000/service2:build-${BUILD_NUMBER}
+  service3:
+    build:
+      context: ./service3
+      dockerfile: Dockerfile
+      image: ansible-jenkins-new:5000/service3:build-${BUILD_NUMBER}
