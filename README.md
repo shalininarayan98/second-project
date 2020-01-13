@@ -95,4 +95,8 @@ https://docs.google.com/document/d/1W1ctLVrTa-uyGnpgiuK6bnaBlaYGS575hKPwuGCXXgM/
 
 # Future Improvements 
 
+- Make my SQL database deployable by dockerising it so there is no need to build your own SQL database to use my app.
+- Front end design
+- User registration and login so users can save their predictions 
+
 
