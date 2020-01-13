@@ -20,17 +20,17 @@
 - This service will also create an “Object” however this “Object” must be based upon the results of service #2 + #3 using some pre-defined rules.
 - The other constraint in this project is the technologies that need to be used. The project needs to utilise the technologies discussed during the training modules. 
 
-    •	Kanban Board: Asana or an equivalent Kanban Board 
+        •	Kanban Board: Asana or an equivalent Kanban Board 
 
-    •	Version Control: Git 
+        •	Version Control: Git 
 
-    •	CI Server: Jenkins 
+        •	CI Server: Jenkins 
 
-    •	Configuration Management: Ansible
+        •	Configuration Management: Ansible
 
-    •	Cloud server: GCP virtual machines 
-
-    •	Containerisation: Docker 
+        •	Cloud server: GCP virtual machines 
+    
+        •	Containerisation: Docker 
 
 
 
