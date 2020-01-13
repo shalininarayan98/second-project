@@ -3,8 +3,6 @@
 
 * [The Brief](#the-brief)
 * [Planning](#planning)
-* [User Stories](#user-stories)
-* [ERDs](#ERDs)
 * [Risk Assessment](#Riks-Assessment)
 * [Deployment CI Pipeline](#Dpeloyment&CI-Pipeline)
 * [Testing](#Testing)
@@ -35,6 +33,12 @@
 
 # Planning
 
+Below is my current trello board.
+
 https://imgur.com/hXwjpBU
+
+# Risk Assessment 
+
+https://docs.google.com/document/d/1W1ctLVrTa-uyGnpgiuK6bnaBlaYGS575hKPwuGCXXgM/edit?usp=sharing
 
 
