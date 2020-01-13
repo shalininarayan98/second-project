@@ -35,6 +35,6 @@
 
 # Planning
 
-![trello.png]https://imgur.com/hXwjpBU
+https://imgur.com/hXwjpBU
 
 
