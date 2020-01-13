@@ -32,17 +32,17 @@ services:
       - SECRET_KEY=${SECRET_KEY}
       - MY_SQL_DB_TEST=${MY_SQL_DB_TEST}
   service1:
+    image: ansible-jenkins-new:5000/service1:build-${BUILD_NUMBER}
     build:
       context: ./service1
       dockerfile: Dockerfile
-      image: ansible-jenkins-new:5000/service1:build-${BUILD_NUMBER}
   service2:
+    image: ansible-jenkins-new:5000/service2:build-${BUILD_NUMBER}
     build:
       context: ./service2
       dockerfile: Dockerfile
-      image: ansible-jenkins-new:5000/service2:build-${BUILD_NUMBER}
   service3:
+    image: ansible-jenkins-new:5000/service3:build-${BUILD_NUMBER}
     build:
       context: ./service3
       dockerfile: Dockerfile
-      image: ansible-jenkins-new:5000/service3:build-${BUILD_NUMBER}
