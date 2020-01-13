@@ -31,6 +31,10 @@
         •	Cloud server: GCP virtual machines 
     
         •	Containerisation: Docker 
+- With this project brief in mind, I am going to create a app that generators a prediction for the user's 2020. this will be done by generating a random letter, a random number and using these two combinations to generate a prediction. 
 
+# Planning
+
+![alt text](screenshots/filename.png "Description goes here")
 
 
