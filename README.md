@@ -41,4 +41,24 @@ https://imgur.com/hXwjpBU
 
 https://docs.google.com/document/d/1W1ctLVrTa-uyGnpgiuK6bnaBlaYGS575hKPwuGCXXgM/edit?usp=sharing
 
+# CI Pipeline 
+
+-Project Tracking; Trello used to track our project and keep on track with our timeline. 
+
+
+-Source Code; Python and Flask. Flask is our web development framework using Jinja2.
+
+
+-Version Control System; Git. THis records changes to files and allows for flexibility, security, and pull requests.
+
+
+
+-CI Server; using webhooks, everytime a push is made onto Git, there is a build trigger on Jenkins which builds up my app using docker-compose.yaml. I used ansible as a configution management tool, so when I run anisble-playbook, creates a jenkins on one VM and the app deployment on the other VM by creating the key-gen. Ansible automates the key-gen and the ssh process allowing for jenkins to ssh into my app deployment VM, and it deploys my app using docker-stack. The benefits to using this are that there its open-source, so no human error. Most importantly, the build/ test and deployment stage is automated making it app scalable. 
+
+-Testing Environment; Pytest (on GCP) Unit testing for each of the individual. 
+
+
+-As live Environment; GCP. Cloud vendor used as it is more secure, scalable, pay as you go basis. 
+
+# How to launch my app
 
