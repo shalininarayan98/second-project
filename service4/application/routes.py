@@ -8,6 +8,8 @@ import requests
 def service4():
 
     response=requests.post('http://service3:5003').text
+    response=requests.post('http://service2:5002').text
+    response=requests.post('http://service1:5001').text
 #    response1=requests.post('http://service1:5001').text
 #    response2=requests.post('http://service2:5002').text
     return response
