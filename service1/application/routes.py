@@ -6,6 +6,6 @@ import requests
 
 @app.route('/', methods=['GET', 'POST'])
 def random_number():
-    number=randint(4,6)
+    number=randint(1,3)
 
     return str(number)
