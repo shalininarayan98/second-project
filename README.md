@@ -35,6 +35,6 @@
 
 # Planning
 
-![alt tag] https://imgur.com/hXwjpBU
+![alt tag]https://imgur.com/hXwjpBU
 
 
