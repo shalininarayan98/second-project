@@ -35,6 +35,6 @@
 
 # Planning
 
-![alt text](screenshots/filename.png "Description goes here")
+![alt text](Documents/trello.png) "Trello Board")
 
 
