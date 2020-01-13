@@ -35,6 +35,6 @@
 
 # Planning
 
-![alt text](Documents/trello.png) "Trello Board")
+![alt text]<blockquote class="imgur-embed-pub" lang="en" data-id="a/u2UWzwH" data-context="false" ><a href="//imgur.com/a/u2UWzwH"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script> "Trello Board")
 
 
