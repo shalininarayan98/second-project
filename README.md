@@ -62,3 +62,6 @@ https://docs.google.com/document/d/1W1ctLVrTa-uyGnpgiuK6bnaBlaYGS575hKPwuGCXXgM/
 
 # How to launch my app
 
+- Fork my repo (the master branch)
+
+
