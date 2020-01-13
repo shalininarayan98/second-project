@@ -64,7 +64,7 @@ https://docs.google.com/document/d/1W1ctLVrTa-uyGnpgiuK6bnaBlaYGS575hKPwuGCXXgM/
 
 # How to launch my app
 
-- Clone my repo (the master branch)
+- Clone this repo (the master branch)
 - Create an empty SQL database and set the environmnet variables in your ~/.bashrc in the following format
    export MY_SQL_USER={username}
    export MY_SQL_PASSWORD={password}
