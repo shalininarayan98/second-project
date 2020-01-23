@@ -71,6 +71,8 @@ https://docs.google.com/document/d/1W1ctLVrTa-uyGnpgiuK6bnaBlaYGS575hKPwuGCXXgM/
 
 # Testing
 
+https://docs.google.com/document/d/1s-c1OT_L4W9cS5aSCJQldkYx2WjmsfufwfRjJAKW3t8/edit?usp=sharing 
+
 # How to launch my app
 
 - Clone this repo (the master branch)
