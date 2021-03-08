@@ -38,7 +38,7 @@ https://docs.google.com/presentation/d/1RjkNUI4BVYoT0clRnXZObMbO2OmpbApUUo3wm4cV
 from application import db
 from application.models import Posts
 db.create_all()
-- With this project brief in mind, I am going to create a app that generators a prediction for the user's 2020. This will be done by generating a random Nnumber (service 1), generating a random letter (service 2), and using these two combinations to generate a prediction (service 3), which is rendered on service 4.
+- With this project brief in mind, I am going to create a app that generators a prediction for the user's 2020. This will be done by generating a random number (service 1), generating a random letter (service 2), and using these two combinations to generate a prediction (service 3), which is rendered on service 4.
 
 # Planning
 
