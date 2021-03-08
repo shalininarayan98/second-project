@@ -58,7 +58,7 @@ https://docs.google.com/document/d/1W1ctLVrTa-uyGnpgiuK6bnaBlaYGS575hKPwuGCXXgM/
 - Source Code; Python and Flask. Flask is our web development framework using Jinja2.
 
 
-- Version Control System; Git. THis records changes to files and allows for flexibility, security, and pull requests.
+- Version Control System; Git. This records changes to files and allows for flexibility, security, and pull requests.
 
 
 
