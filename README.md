@@ -98,7 +98,7 @@ https://docs.google.com/document/d/1s-c1OT_L4W9cS5aSCJQldkYx2WjmsfufwfRjJAKW3t8/
   p1=Prediction(predictions=' ')
   db.session.add(p1)
   db.session.commit()
-  (Now repeat this so you have 9 data entries, you can make the predictions whatever you like!)
+  (Now repeat this so you have 9 data entries, you can make the predictions to whatever you like!)
   
 - Next we will build my app using docker. Please install docker and docker-compose and add your user to the docker group
 - Build my app using 'docker-compose.yaml up -d --build'
